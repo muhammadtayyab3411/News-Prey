@@ -1,11 +1,20 @@
-# Getting Started with Create React App
+# Welcome to  News Prey
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## About News Prey
 
-In the project directory, you can run:
+News Prey is a web application that fetches the latest news around the globe. It was bootstrapped with [create react app](https://github.com/facebook/create-react-app). It has the functionality to bring news of a specific category, or country and has an advanced search. [News API](https://newsapi.org) is used in the application to populate real-time news on the app.
 
+## Getting started with News Prey
+
+1. Go to (News API)[https://newsapi.org]
+2. Signup to get your API key. It has a free plan for developers.
+3. Make a file named **.env.local** on the root directory of the project.
+4. Save your API key as `REACT_APP_NEWS_API_KEY = "YOUR_API_KEY"`
+5. Now you can run the React Application.
+
+## Run Commands
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -39,32 +48,17 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Warning
+The free API key from [News API](https://newsapi.org) works only on [localhost](http://127.0.0.1:3000) and you can only make 100 requests to the API per day. If you want to deploy the app you should go with the [paid plan](https://newsapi.org/pricing) of [News API](https://newsapi.org).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Credits
+[News API](https://newsapi.org)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Misc
+Follow Muhammad Tayyab [Github](https://github.com/muhammadtayyab3411)  [Linkedin](https://www.linkedin.com/in/muhammad-tayyab-a12258228/) [Twitter](https://twitter.com/Tayyab_3411) [Instagram](https://instagram.com/muhammadtayyab_3411)
 
-### Code Splitting
+## License
+[Muhammad Tayyab](https://github.com/muhammadtayyab3411)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Note
+This website needs a lot of improvements. So your pull requests will be appreciated.
