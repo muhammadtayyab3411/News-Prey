@@ -8,7 +8,7 @@ News Prey is a web application that fetches the latest news around the globe. It
 
 ## Getting started with News Prey
 
-1. Go to (News API)[https://newsapi.org]
+1. Go to [News API](https://newsapi.org)
 2. Signup to get your API key. It has a free plan for developers.
 3. Make a file named **.env.local** on the root directory of the project.
 4. Save your API key as `REACT_APP_NEWS_API_KEY = "YOUR_API_KEY"`
