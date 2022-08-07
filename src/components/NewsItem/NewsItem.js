@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 export default class NewsItem extends Component {
   render() {
-    let { title, description, urlToImage, urlToNews } = this.props;
+    let { title, description, urlToImage, urlToNews, publishedAt, source } =
+      this.props;
     return (
       <>
         <div
@@ -13,6 +14,23 @@ export default class NewsItem extends Component {
             fontFamily: "'Josefin Sans', sans-serif",
           }}
         >
+          <div
+            className="d-flex"
+            style={{
+              justifyContent: "flex-end",
+              alignItems: "flex-start",
+              position: "absolute",
+              right: "0",
+              top: "0",
+            }}
+          >
+            <span
+              className="badge rounded-pill bg-danger"
+              style={{ left: "19%", fontSize: ".8rem" }}
+            >
+              {source ? source : "Unknown"}
+            </span>
+          </div>
           <img
             src={urlToImage}
             onError={(image) => {
@@ -29,10 +47,28 @@ export default class NewsItem extends Component {
               className="card-title"
               style={{ fontFamily: "'Ubuntu', sans-serif" }}
             >
-              {title}
+              {title ? title : "No title..."}
             </h5>
-            <p className="card-text">{description}</p>
-            <a href={urlToNews} target="_blank" className="btn btn-primary">
+            <p className="card-text">
+              {description ? description : "No description..."}
+            </p>
+            <p className="card-text">
+              <small className="text-muted">
+                {publishedAt
+                  ? new Date(publishedAt).toUTCString()
+                  : new Date().toUTCString()}
+              </small>
+            </p>
+            <a
+              rel="noreferrer"
+              href={
+                urlToNews
+                  ? urlToNews
+                  : window.alert("No link found to this news")
+              }
+              target="_blank"
+              className="btn btn-primary"
+            >
               Read More
             </a>
           </div>
