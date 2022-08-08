@@ -50,7 +50,7 @@ export default function NewsSection(props) {
   }, []);
 
   const fetchMoreData = async () => {
-    setPage(page + 1);
+    await setPage(page + 1);
     let apiKey = props.apiKey;
     let pageSize = props.pageSize;
     let searchQuery = props.searchQuery;
