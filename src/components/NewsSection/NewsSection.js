@@ -47,6 +47,7 @@ export default function NewsSection(props) {
 
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line
   }, []);
 
   const fetchMoreData = async () => {
